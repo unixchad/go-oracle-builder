@@ -1,0 +1,13 @@
+prefixdir=/opt/oracle/instantclient_19_6/
+libdir=${prefixdir}
+includedir=${prefixdir}/sdk/include
+
+glib_genmarshal=glib-genmarshal
+gobject_query=gobject-query
+glib_mkenums=glib-mkenums
+
+Name: OCI
+Description: Oracle database driver
+Version: 19.6
+Libs: -L${libdir} -lclntsh
+Cflags: -I${includedir}
